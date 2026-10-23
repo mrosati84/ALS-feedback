@@ -1,6 +1,6 @@
 # ALS — Issue Tracker
 
-This is the public issue tracker for **ALS (Advanced Looping Station)**, a sequenced looper for live performance that runs on macOS and Linux.
+This is the public issue tracker for **ALS (Advanced Looping Station)**, a sequenced looper for live performance that runs on macOS and Linux. To learn more about ALS, read the documentation or get the app, visit [als-looper.com](https://www.als-looper.com/).
 
 It holds **no source code and no downloads**. Use it only to report bugs and suggest features.
 
