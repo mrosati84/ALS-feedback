@@ -1,0 +1,67 @@
+name: Bug report
+description: Report a reproducible problem with the product.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Please avoid sharing license keys or personal data.
+  - type: input
+    id: product-version
+    attributes:
+      label: Product version
+      description: Find the version in the app's About screen or release information.
+      placeholder: "e.g. 1.2.3"
+    validations:
+      required: true
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Operating system
+      options:
+        - macOS
+        - Linux
+    validations:
+      required: true
+  - type: textarea
+    id: observed-behavior
+    attributes:
+      label: What happened?
+      description: Describe the problem and any error message.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Steps to reproduce
+      description: Describe the steps someone can follow to see the bug.
+      placeholder: |
+        1. Open ...
+        2. Click ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What should have happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional context
+      description: Attach screenshots or sanitized logs if helpful. Do not include private information.
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues for duplicates.
+          required: true
+        - label: I removed passwords, license keys, and other sensitive data.
+          required: true
